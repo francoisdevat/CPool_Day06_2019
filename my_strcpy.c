@@ -1,3 +1,10 @@
+/*
+** EPITECH PROJECT, 2019
+** fonction qui remplace
+** File description:
+** ça remmmmmmmmplace !!
+*/
+
 char *my_strcpy(char *dest,char *src)
 {    
     int i;
