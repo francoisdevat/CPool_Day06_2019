@@ -15,11 +15,12 @@ char *my_strncpy(char *dest, char const *src, int n)
         count++;
     }    
     i = 0;
-    while (i < dest[count]) {
-        dest[i] = src[i];
-        i++;
+    for (i =0; i < n; i++){
+        if (i <= count) {
+            dest[i] = src[i];
+        }    
     }
-    if ( dest[count] < n) {
+    if ( count < n) {
         dest[count] = '\0';
     }    
     return (dest);
