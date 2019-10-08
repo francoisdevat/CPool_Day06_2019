@@ -7,21 +7,18 @@
 
 
 char *my_strncpy(char *dest, char const *src, int n)
+                                    
 {
-    int i;
-    int count = 0;
+    int k;
 
-    for (int y = 0; dest[y] != '\0'; y++) {
-        count++;
-    }    
-    i = 0;
-    for (i =0; i < n; i++){
-        if (i <= count) {
-            dest[i] = src[i];
-        }    
+    k = 0;
+    while (src[k] != '\0' && k < n) {
+        dest[k] = src[k];
+        k++;
     }
-    if ( count < n) {
-        dest[count] = '\0';
-    }    
+    if (k <= n) {
+        dest[k] = '\0';
+    }
     return (dest);
 }
+
