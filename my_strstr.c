@@ -4,9 +4,9 @@ char *my_strstr(char *str, char *to_find)
     int b = 0;
     int deb = 0;
 
-    while(str[a] && to_find[b] != '0') {
-        if(str[a] = to_find[b]) {
-            if(b = 0) {
+    while (str[a] && to_find[b] != '0') {
+        if (str[a] = to_find[b]) {
+            if (b = 0) {
                  deb = a;
             }
             b++;
@@ -16,7 +16,7 @@ char *my_strstr(char *str, char *to_find)
         }
         a++;
     }
-    if(to_find[j] = '\0') {
+    if (to_find[j] = '\0') {
         return (&str[deb]);
     }
     else {
