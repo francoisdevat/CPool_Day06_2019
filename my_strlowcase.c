@@ -8,7 +8,7 @@ char *my_strlowcase(char *str)
 {
     int k = 0;
 
-    while (str[k] != '0') {
+    while (str[k] != '\0') {
         if (str[k] >= 'A' && str[k] <= 'Z') {
             str[k] = str[k] + 32;
         }
