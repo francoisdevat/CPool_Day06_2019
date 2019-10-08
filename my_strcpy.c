@@ -5,7 +5,7 @@
 ** ça remmmmmmmmplace !!
 */
 
-char *my_strcpy(char *dest,char *src)
+char *my_strcpy(char *dest,char const *src)
 {    
     int i;
     
