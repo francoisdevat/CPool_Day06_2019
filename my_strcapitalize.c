@@ -12,12 +12,12 @@ char *my_strcapitalize(char *str)
         if (str[k] >= 'A' && str[k] <= 'Z')
         {
             if (str[k - 1] != ' ')
-                str[k] = str[k] - ('A' - 'a');
+                str[k] = str[k] + 32;
         }
         if (str[k] >= 'a' && str[k] <= 'z')
         {
             if (str[k - 1] == ' ')
-                str[k] = str[k] + ('A' - 'a');
+                str[k] = str[k] - 32;
         }
     }
     if (str[0] >= 'a' && str[0] <= 'z')
