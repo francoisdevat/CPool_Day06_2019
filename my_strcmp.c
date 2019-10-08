@@ -1,3 +1,10 @@
+/*
+** EPITECH PROJECT, 2019
+** moncomparateur
+** File description:
+** 
+*/
+
 int my_strcmp(char *s1, char *s2)
 {
     int i = 0;
